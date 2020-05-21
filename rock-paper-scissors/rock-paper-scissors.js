@@ -9,11 +9,9 @@ const getUserChoice = userInput => {
   }
   
   let validTest = "paper";
-  //console.log(getUserChoice(validTest));
   
   const getComputerChoice = () => {
     let ranNum = Math.floor(Math.random() * 3);
-    // console.log(ranNum);
     
     switch (ranNum) {
       case 0: 
@@ -24,8 +22,6 @@ const getUserChoice = userInput => {
         return 'scissors';
     }
   }
-  
-  //console.log(getComputerChoice());
   
   const determineWinner = (userChoice, computerChoice) => {
     if (userChoice === computerChoice) {
@@ -62,9 +58,7 @@ const getUserChoice = userInput => {
         } 
       }
     }
-  
-    //console.log(determineWinner('bomb', 'rock'));
-  
+    
     const playGame = () => {
       const userChoice = getUserChoice("rock");
   
